@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Refresh</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+    /* CSS to hide the content */
+.btnDownload {
+  position: absolute;
+  border-radius:25px;
+  left: 25px; /* Adjust as needed */
+  top:25px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .btnDownload {
+    position: absolute;
+    left: 25px; /* Adjust as needed */
+    top:25px;
+
+  }
+}
+</style>
+<body>
+
+
+    <!-- Refresh button -->
+    <button onclick="refreshPage()" class="btn btn-rounded btn-outline-warning shadow btnDownload">Refresh</button>
+
+    <script>
+        function refreshPage() {
+            // Reload the current page
+            location.reload();
+        }
+    </script>
+
+</body>
+</html>
